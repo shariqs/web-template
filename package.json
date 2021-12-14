@@ -1,0 +1,56 @@
+{
+  "name": "web-template",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@auth0/auth0-react": "^1.8.0",
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "antd": "^4.17.3",
+    "auth0": "^2.37.0",
+    "auth0-lock": "^11.31.1",
+    "axios": "^0.24.0",
+    "cross-env": "^7.0.3",
+    "dotenv": "^10.0.0",
+    "lodash": "^4.17.21",
+    "md5": "^2.3.0",
+    "node-sass": "^7.0.0",
+    "react": "^17.0.2",
+    "react-animated-css": "^1.2.1",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.6",
+    "react-router": "^6.1.1",
+    "react-scripts": "4.0.3",
+    "redux-immutable-state-invariant": "^2.1.0",
+    "redux-thunk": "^2.4.1",
+    "web-vitals": "^1.0.1"
+  },
+  "scripts": {
+    "start": "cross-env REACT_APP_STAGE=local react-scripts start",
+    "start-dev": "cross-env REACT_APP_STAGE=dev react-scripts start",
+    "start-prod": "cross-env REACT_APP_STAGE=production react-scripts start",
+    "build": "react-scripts build",
+    "build-dev": "cross-env REACT_APP_STAGE=dev npm run build",
+    "build-prod": "cross-env REACT_APP_STAGE=production npm run build"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
