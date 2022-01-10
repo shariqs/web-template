@@ -1,7 +1,7 @@
 import React from "react";
 import { useThemeSwitcher } from "react-css-theme-switcher";
 import { Switch, Input } from "antd";
-import "./App.css";
+import "./App.scss";
 
 function App() {
   const [isDarkMode, setIsDarkMode] = React.useState();

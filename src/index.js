@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { ThemeSwitcherProvider } from "react-css-theme-switcher";
-import "./index.css";
+import "./index.scss";
 
 const themes = {
   dark: `${process.env.PUBLIC_URL}/dark-theme.css`,

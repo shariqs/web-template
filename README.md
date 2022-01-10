@@ -6,4 +6,6 @@ Themes should be created in /src/themes. Themes need to be in a .less format, an
 
 Once theme has been created (or modified), you will need to run 'npm run themify' in order to have it compiled into browser-ready css. Modified themes will not work until this command is run.
 
-
+## Node Setup
+Node: v14.16.0
+Npm: 6.14.11
