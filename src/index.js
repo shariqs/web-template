@@ -1,14 +1,26 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { ThemeSwitcherProvider } from "react-css-theme-switcher";
+import "./index.css";
+
+const themes = {
+  dark: `${process.env.PUBLIC_URL}/dark-theme.css`,
+  light: `${process.env.PUBLIC_URL}/light-theme.css`,
+};
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ThemeSwitcherProvider
+      themeMap={themes}
+      defaultTheme="light"
+      insertionPoint="styles-insertion-point"
+    >
+      <App />
+    </ThemeSwitcherProvider>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function
