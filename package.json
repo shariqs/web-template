@@ -21,10 +21,9 @@
     "react-css-theme-switcher": "^0.3.0",
     "react-dom": "^17.0.2",
     "react-redux": "^7.2.6",
-    "react-router": "^6.1.1",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "redux-immutable-state-invariant": "^2.1.0",
-    "redux-thunk": "^2.4.1",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
@@ -65,7 +64,10 @@
     "gulp-less": "^4.0.1",
     "gulp-postcss": "^8.0.0",
     "less-plugin-npm-import": "^2.1.0",
+    "normalize.css": "^8.0.1",
     "prettier": "^2.5.1",
+    "redux-persist": "^6.0.0",
+    "redux-thunk": "^2.4.1",
     "sass": "^1.47.0"
   }
 }

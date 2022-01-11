@@ -1,0 +1,17 @@
+@import "../../common/styles/responsive";
+@import "../../common/styles/styles";
+
+.about-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    flex: 1;
+    align-items: center;
+    margin-top: 25%;
+
+    .content-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }    
+}

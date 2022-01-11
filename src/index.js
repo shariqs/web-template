@@ -1,8 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./App";
+import { Provider } from "react-redux";
 import reportWebVitals from "./reportWebVitals";
+import RootContainer from "./containers/RootContainer";
 import { ThemeSwitcherProvider } from "react-css-theme-switcher";
+import { store, persistor } from "./redux-store/storeConfiguration";
+import { PersistGate } from "redux-persist/integration/react";
 import "./index.scss";
 
 const themes = {
@@ -12,12 +15,12 @@ const themes = {
 
 ReactDOM.render(
   <React.StrictMode>
-    <ThemeSwitcherProvider
-      themeMap={themes}
-      defaultTheme="light"
-      insertionPoint="styles-insertion-point"
-    >
-      <App />
+    <ThemeSwitcherProvider themeMap={themes} defaultTheme="light" insertionPoint="styles-insertion-point">
+      <Provider store={store}>
+        <PersistGate persistor={persistor}>
+          <RootContainer />
+        </PersistGate>
+      </Provider>
     </ThemeSwitcherProvider>
   </React.StrictMode>,
   document.getElementById("root")
