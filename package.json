@@ -5,14 +5,16 @@
   "version": "1.0.0",
   "private": false,
   "dependencies": {
-    "@auth0/auth0-react": "^1.8.0",
     "@fortawesome/fontawesome-free": "^5.15.4",
+    "@fortawesome/fontawesome-svg-core": "^1.2.36",
+    "@fortawesome/free-brands-svg-icons": "^5.15.4",
+    "@fortawesome/free-regular-svg-icons": "^5.15.4",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "@fortawesome/react-fontawesome": "^0.1.16",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "antd": "^4.17.3",
-    "auth0": "^2.37.0",
-    "auth0-lock": "^11.31.1",
     "axios": "^0.24.0",
     "cross-env": "^7.0.3",
     "dotenv": "^10.0.0",
@@ -68,7 +70,6 @@
     "less-plugin-npm-import": "^2.1.0",
     "normalize.css": "^8.0.1",
     "prettier": "^2.5.1",
-    "redux-persist": "^6.0.0",
     "redux-thunk": "^2.4.1",
     "sass": "^1.47.0"
   }

@@ -3,7 +3,8 @@ import { useHistory } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { useThemeSwitcher } from "react-css-theme-switcher";
 import { Input, Button, Dropdown, Menu } from "antd";
-import { DownOutlined } from "@ant-design/icons";
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { getThemeColors, someAPICall, setTheme } from "../../actions";
 import { get } from "lodash";
 import "./index.scss";
@@ -15,8 +16,7 @@ const Home = () => {
   const { switcher, status, themes } = useThemeSwitcher();
 
   // Redux-hooks
-  const { state, themeName, themeColors } = useSelector((state) => ({
-    state: state,
+  const { themeName, themeColors } = useSelector((state) => ({
     themeName: state.theme.name,
     themeColors: state.theme.colors,
   }));
@@ -50,7 +50,7 @@ const Home = () => {
         <Button>
           <Dropdown overlay={menu} trigger={["click"]}>
             <a onClick={(e) => e.preventDefault()}>
-              Change Theme <DownOutlined />
+              Change Theme <FontAwesomeIcon icon={faChevronDown} />
             </a>
           </Dropdown>
         </Button>
