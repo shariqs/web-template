@@ -13,7 +13,7 @@ import * as Themes from "../constants/themes";
  * @param {string} incomingTheme
  * @returns Object - Returns an object that contains the corresponding theme's variables (used for inline-styles)
  */
- export function getThemeColors(incomingTheme) {
+export function getThemeColors(incomingTheme) {
   return function (dispatch, getState) {
     let theme = incomingTheme || get(getState(), "settings.theme", "light");
 
