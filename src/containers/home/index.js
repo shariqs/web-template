@@ -5,7 +5,7 @@ import { useThemeSwitcher } from "react-css-theme-switcher";
 import { Input, Button, Dropdown, Menu } from "antd";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { getThemeColors, someAPICall, setTheme } from "../../actions";
+import { someAPICall, setTheme } from "../../actions";
 import { get } from "lodash";
 import "./index.scss";
 
@@ -37,7 +37,6 @@ const Home = () => {
     </Menu>
   );
 
-  dispatch(getThemeColors());
   // Avoid theme change flicker
   if (status === "loading") return null;
 
