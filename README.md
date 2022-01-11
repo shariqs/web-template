@@ -35,7 +35,7 @@ Theming isn't particularly hard in this project, but does require a bit of coord
 - **getThemeColors** function in */src/actions/util* -> Outputs the current theme's **inline javascript styling**. No need to write confusing *themename === "x" ? "red" : "blue"* logic. Instead, grab **themeColors** from redux, then simply call: **themeColors.primaryColor**
 
 ### Modifying AntD theme (via .less theme files)
-The .less theme files use variables from [https://github.com/ant-design/ant-design/blob/master/components/style/themes/default.less] or [/node_modules/antd/lib/style/themes/default.less]
+The .less theme files use variables from [https://github.com/ant-design/ant-design/blob/master/components/style/themes/default.less] or **/node_modules/antd/lib/style/themes/default.less**
 
 ### Why so many theme files?
 Good question! I'd love to reduce this, if anyone has a better system. I needed a way to *blend* the AntD themes, css variables, and inline style variables, as all 3 may be used throughout the app, and all 3 should relate to one-another.
