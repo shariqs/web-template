@@ -1,5 +1,4 @@
 @import "../../common/styles/responsive";
-@import "../../common/styles/styles";
 
 .home-wrapper {
   display: flex;
@@ -7,7 +6,7 @@
   padding: 30px;
   flex: 1;
   align-items: center;
-  margin-top: 25%;
+  margin-top: 150px;
 
   .content-wrapper {
     display: flex;
@@ -24,18 +23,9 @@
       width: 90vw;
     }
 
-    .switch-wrapper {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      margin-bottom: 15px;
-
-      .switch {
-        display: flex;
-        width: 50px;
-        margin-right: 10px;
-      }
-    }   
+    .text {
+      color: var(--primary-color)
+    }  
   } 
 }
 
@@ -43,7 +33,7 @@
   animation: fadeIn;
   animation-duration: 0.6s;
 }
-  
+
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }

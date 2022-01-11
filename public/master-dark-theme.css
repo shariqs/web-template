@@ -1,0 +1,9 @@
+@import "./dark-theme.css";
+
+:root {
+  --primary-color: red;
+  --secondary-color: orange;
+  --white: #ffffff;
+  --black: #000000;
+  --border-radius: 0px;
+}

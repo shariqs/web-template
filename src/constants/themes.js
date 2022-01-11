@@ -7,9 +7,9 @@ export const lightTheme = {
 };
 
 export const darkTheme = {
-  primaryColor: "#D04283",
-  secondaryColor: "#C178FF",
+  primaryColor: "red",
+  secondaryColor: "orange",
   white: "#FFFFFF",
   black: "#000000",
-  borderRadius: "8px",
+  borderRadius: "0px",
 };

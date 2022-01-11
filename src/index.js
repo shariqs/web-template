@@ -9,8 +9,8 @@ import { PersistGate } from "redux-persist/integration/react";
 import "./index.scss";
 
 const themes = {
-  dark: `${process.env.PUBLIC_URL}/dark-theme.css`,
-  light: `${process.env.PUBLIC_URL}/light-theme.css`,
+  dark: `${process.env.PUBLIC_URL}/master-dark-theme.css`,
+  light: `${process.env.PUBLIC_URL}/master-light-theme.css`,
 };
 
 ReactDOM.render(

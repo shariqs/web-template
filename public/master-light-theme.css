@@ -1,0 +1,10 @@
+/* @import url("../../../public/light-theme.css"); */
+@import "./light-theme.css";
+
+:root {
+    --primary-color: #D04283;
+    --secondary-color: #C178FF;
+    --white: #FFFFFF;
+    --black: #000000;
+    --border-radius: 8px;
+}

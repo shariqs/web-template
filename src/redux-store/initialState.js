@@ -1,5 +1,10 @@
+import { lightTheme } from "../constants";
+
 let initialState = {
-  test: false,
+  theme: {
+    name: "light",
+    colors: lightTheme,
+  },
 };
 
 export default initialState;

@@ -1,14 +1,16 @@
 export const responses = {
-  // Statuses
+  // Status
   status: {
     success: "Success",
     error: "Error",
     warn: "Notice",
   },
 
-  // General Descriptions
+  // General Responses
   description: {
     success: "Your request was successful",
     error: "Your request was unsuccessful",
+    themeChanged: "Theme successfully changed",
+    themeChangeFailed: "Theme failed to change",
   },
 };
