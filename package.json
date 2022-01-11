@@ -1,7 +1,9 @@
 {
   "name": "web-template",
+  "author": "Jake Motta",
+  "description": "A (heavy) web template project with the basics already pre-built. The goal of this repository is to be easily forked and modified for quick app prototyping.",
   "version": "1.0.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@auth0/auth0-react": "^1.8.0",
     "@fortawesome/fontawesome-free": "^5.15.4",

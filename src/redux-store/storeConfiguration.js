@@ -1,4 +1,7 @@
-/* eslint-disable no-undef */
+/**
+ * REDUX STORE SETTINGGS
+ * Define how your redux store works
+ */
 
 import { createStore, compose, applyMiddleware } from "redux";
 import thunk from "redux-thunk";

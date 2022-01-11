@@ -1,3 +1,8 @@
+/**
+ * THEME ACTIONS
+ * Actions that are relevant to the 'theme' reducer or functionality
+ */
+
 import { notification } from "antd";
 import { responses, SET_THEME_COLORS, SET_THEME_NAME } from "../constants";
 import { getThemeColors } from ".";

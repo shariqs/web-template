@@ -1,3 +1,8 @@
+/**
+ * API EXPORT
+ * Standardizes HTTP request / response
+ */
+
 import axios from "axios";
 import { get } from "lodash";
 

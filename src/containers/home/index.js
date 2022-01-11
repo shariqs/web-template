@@ -5,8 +5,8 @@ import { useThemeSwitcher } from "react-css-theme-switcher";
 import { Input, Button, Dropdown, Menu } from "antd";
 import { DownOutlined } from "@ant-design/icons";
 import { getThemeColors, someAPICall, setTheme } from "../../actions";
-import "./index.scss";
 import { get } from "lodash";
+import "./index.scss";
 
 const Home = () => {
   const dispatch = useDispatch();

@@ -1,4 +1,8 @@
-// media queries covering all devices
+/**
+ * MEDIA QUERY TAGS
+ * Media queries covering all devices
+ * Note: You need to import this into each css file that wants to use it. See '/containers/home/index.scss' for example
+ */
 
 $l-orientation: "and (orientation: landscape)" !default;
 $p-orientation: "and (orientation: portrait)" !default;

@@ -1,3 +1,8 @@
+/**
+ * RESPONSES
+ * Create universally standardized responses
+ */
+
 export const responses = {
   // Status
   status: {

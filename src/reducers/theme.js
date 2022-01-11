@@ -1,3 +1,8 @@
+/**
+ * REDUCERS
+ * Define how your actions will modify your redux store
+ */
+
 import { SET_THEME_NAME, SET_THEME_COLORS } from "../constants";
 import initialState from "../redux-store/initialState";
 

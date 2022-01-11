@@ -1,3 +1,8 @@
+/**
+ * INITIAL STATE
+ * Defines your initial redux state
+ */
+
 import { lightTheme } from "../constants";
 
 let initialState = {

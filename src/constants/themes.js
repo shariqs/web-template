@@ -1,3 +1,8 @@
+/**
+ * INLINE JAVASCRIPT THEMES
+ * Note: Try to keep all keys the same name across themes.
+ */
+
 export const lightTheme = {
   primaryColor: "#D04283",
   secondaryColor: "#C178FF",

@@ -1,5 +1,5 @@
 # Web Template with AntD, Theme Switching, Routing, Redux
-This is a web template project with the basics already pre-built. The goal of this repository is to be easily forked and modified for quick app prototyping.
+A (heavy) web template project with the basics already pre-built. The goal of this repository is to be easily forked and modified for quick app prototyping.
 
 # Themeing
 Theming isn't particularly hard in this project, but does require a bit of coordination and setup. Please read the below guide carefully to ensure themes are correctly used. **Keep theme variables named the same across files and objects**

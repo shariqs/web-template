@@ -1,3 +1,8 @@
+/**
+ * UTILS
+ * General utils that may need to use dispatch / getState
+ */
+
 import { HTTP } from "../configs/api";
 import { notification } from "antd";
 import { responses } from "../constants";

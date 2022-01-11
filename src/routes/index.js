@@ -1,3 +1,8 @@
+/**
+ * ROUTES
+ * Define your app's various routes here
+ */
+
 import { Redirect } from "react-router";
 import Home from "../containers/home";
 import About from "../containers/about";
