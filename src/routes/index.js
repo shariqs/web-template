@@ -3,7 +3,8 @@
  * Define your app's various routes here
  */
 
-import { Redirect } from "react-router";
+import React from "react";
+import { Redirect } from "react-router-dom";
 import Home from "../containers/home";
 import About from "../containers/about";
 
