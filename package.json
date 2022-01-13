@@ -42,6 +42,7 @@
     "antd": "^4.17.3",
     "autoprefixer": "^9.8.4",
     "axios": "^0.24.0",
+    "component-library": "shariqs/component-library#latest-npm",
     "dotenv": "^10.0.0",
     "@fortawesome/fontawesome-free": "^5.15.4",
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
@@ -63,6 +64,7 @@
     "react-router-dom": "^5.2.0",
     "redux-immutable-state-invariant": "^2.1.0",
     "redux-thunk": "^2.4.1",
-    "sass": "^1.47.0"
+    "sass": "^1.47.0",
+    "styled-components": "^5.3.3"
   }
 }

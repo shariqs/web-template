@@ -1,0 +1,41 @@
+@import "../../common/styles/responsive";
+
+.signup-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  flex: 1;
+  align-items: center;
+  margin-top: 150px;
+
+  .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    
+    // Example for tablet (and below) view
+    @include tablet-landscape-and-below {
+      width: 80vw;
+    }
+
+    // Example for mobile-only view
+    @include mobile-only {
+      width: 90vw;
+    }
+
+    .text {
+      color: var(--primary-color)
+    }  
+  } 
+}
+
+.fade-in {
+  animation: fadeIn;
+  animation-duration: 0.6s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+  

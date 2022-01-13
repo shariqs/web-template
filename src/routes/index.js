@@ -7,6 +7,7 @@ import React from "react";
 import { Redirect } from "react-router-dom";
 import Home from "../containers/home";
 import About from "../containers/about";
+import Signup from "../containers/signup";
 
 const routes = [
   {
@@ -29,6 +30,13 @@ const routes = [
     isChild: false,
     private: false,
     component: () => <About />,
+  },
+  {
+    path: "/signup",
+    exact: true,
+    isChild: false,
+    private: false,
+    component: () => <Signup />,
   },
 ];
 
