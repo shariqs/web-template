@@ -10,17 +10,18 @@ Theming isn't particularly hard in this project, but does require a bit of coord
 1. Create a new **less file** in */src/common/themes* (needs to be a .less file)
 2. Create a new **javascript object** in */src/constants/themes*
 3. Create a new **css file** in */public* called **master-<themeName>-theme.css**
-4. Add your theme to the **getThemeColors** function in */src/actions/util*
+4. Add your theme to the **getThemeColors** function in */src/actions/themes.js*
 5. Add theme file (from step 3) to **themes** variable in */src/index.js*
 5. Run **npm run themify** to compile your changes
-6. Restart terminal (re-rerun **npm run start**)
+6. Import the newly created **<themeName>-theme.css** file into the **master-<themeName>-theme.css** file created in step 3
+7. Restart terminal (re-rerun **npm run start**)
 
 ### Remove Themes
 1. Remove undesired theme **file** from */src/common/themes*
 2. Remove undesired theme **object** from */src/constants/themes*
 3. Remove undesired theme **files** from */public* (master-theme + exported theme)
 4. Remove undesired theme from **theme** variable in */src/index.js*
-5. Remove undesired theme from **getThemeColors** function in */src/actions/util*
+5. Remove undesired theme from **getThemeColors** function in */src/actions/themes.js*
 6. Restart terminal (re-rerun **npm run start**)
 
 ### Modify Themes
@@ -34,7 +35,7 @@ Theming isn't particularly hard in this project, but does require a bit of coord
 - */src/common/themes* -> Controls **AntD theme**
 - */src/constants/themes* -> Controls **inline javascript styling**
 - */public/<master-themeName-theme.css>* -> Controls **css variables**. Combines **AntD theme** and **css variables**
-- **getThemeColors** function in */src/actions/util* -> Outputs the current theme's **inline javascript styling**. No need to write confusing *themename === "x" ? "red" : "blue"* logic. Instead, grab **themeColors** from redux, then simply call: **themeColors.primaryColor**
+- **getThemeColors** function in */src/actions/themes.js* -> Outputs the current theme's **inline javascript styling**. No need to write confusing *themename === "x" ? "red" : "blue"* logic. Instead, grab **themeColors** from redux, then simply call: **themeColors.primaryColor**
 
 ### Modifying AntD theme (via .less theme files)
 The .less theme files use variables from [https://github.com/ant-design/ant-design/blob/master/components/style/themes/default.less] or **/node_modules/antd/lib/style/themes/default.less**

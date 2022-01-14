@@ -22,6 +22,8 @@ export function getThemeColors(incomingTheme) {
         return Themes.lightTheme;
       case "dark":
         return Themes.darkTheme;
+      case "wacky":
+        return Themes.wackyTheme;
       default:
         return Themes.lightTheme;
     }

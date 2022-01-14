@@ -1,0 +1,10 @@
+@import "./wacky-theme.css";
+
+:root {
+    --primary-color: #5DB0B3;
+    --secondary-color: #D9EACC;
+    --white: #FFFFFF;
+    --black: #000000;
+    --off-background: #D9EACC;
+    --border-radius: 4px;
+}

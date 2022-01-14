@@ -6,7 +6,7 @@
   padding: 30px;
   flex: 1;
   align-items: center;
-  margin-top: 150px;
+  margin-top: 50px;
 
   .content-wrapper {
     display: flex;
@@ -23,9 +23,28 @@
       width: 90vw;
     }
 
-    .text {
-      color: var(--primary-color)
-    }  
+    .section-block {
+      display: flex;
+      flex-direction: column;
+      flex: 0;
+      margin-bottom: 50px;
+      border-radius: var(--border-radius);
+      background-color: var(--off-background);
+      padding: 15px;
+      box-shadow: inset 0px 0px 3px var(--primary-color);
+
+      .section-label {
+        display: flex;
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      .section-content {
+        display: flex;
+        flex-direction: column;
+      }
+    }
   } 
 }
 

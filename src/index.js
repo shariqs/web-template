@@ -10,6 +10,7 @@ import "./index.scss";
 const themes = {
   dark: `${process.env.PUBLIC_URL}/master-dark-theme.css`,
   light: `${process.env.PUBLIC_URL}/master-light-theme.css`,
+  wacky: `${process.env.PUBLIC_URL}/master-wacky-theme.css`,
 };
 
 ReactDOM.render(
